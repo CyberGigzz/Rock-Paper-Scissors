@@ -5,10 +5,13 @@ game();
 function game() {
   let playerScore = 0;
   let computerScore = 0;
+
+  //   Go through loop 5 times so that game has 5 rounds
   for (let round = 1; round <= 5; round++) {
     const computerChoice = getRandomChoice(choices);
     let playerChoice = "";
 
+    // Prompt user until they type rock, paper, or scissor
     while (!choices.includes(playerChoice)) {
       playerChoice = prompt(
         "Enter one of the following: Rock, Paper, or Scissors."
