@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #222831;
+
+  min-height: 100vh;
+}
+
+.rock,
+.paper,
+.scissor {
+  background-color: #495057;
+  color: #fff;
+  width: 16rem;
+  height: 16rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rock:hover,
+.paper:hover,
+.scissor:hover {
+  background-color: #868e96;
+}
+
+.sign {
+  font-size: 8rem;
+  padding: 0 1rem;
+}
+
+/* Heading */
+.header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 4rem 0;
+  background-color: #212529;
+}
+
+.heading {
+  color: #ffe066;
+  font-size: 3.6rem;
+  font-family: "Alfa Slab One", cursive;
+  word-spacing: 0.3em;
+}
+
+.choice {
+  padding-top: 2rem;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.choiceSmall {
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.score {
+  display: flex;
+  max-width: 40rem;
+  margin: 3rem auto;
+  justify-content: space-around;
+}
+
+.scoreBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.player {
+  font-size: 2.4rem;
+  padding: 2rem;
+}
+
+.computer {
+  font-size: 2.4rem;
+  padding: 2rem;
+}
+
+.question_mark {
+  max-width: 10rem;
+  height: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.copyright {
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+
