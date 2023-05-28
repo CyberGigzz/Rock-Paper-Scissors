@@ -22,9 +22,15 @@
     <script src="js/game.js" defer></script>
     <script src="js/year.js" defer></script>
 
-    <title>Rock, Paper, Scissor!</title>
+    <title>Rock Paper Scissor</title>
   </head>
   <body>
+    <div id="backdrop"></div>
+    <div class="modal card" id="addModal">
+      <p class="endResult">Huh</p>
+      <button class="restartBtn">Play again!</button>
+    </div>
+
     <header class="header">
       <h1 class="heading">ROCK PAPER SCISSOR</h1>
     </header>
@@ -34,20 +40,12 @@
         <h2 class="choiceSmall">First to reach 5 points is the winner</h2>
         <div class="score">
           <div class="scoreBox">
-            <img
-              src="img/problem.png"
-              alt="Question mark"
-              class="question_mark"
-            />
-            <p class="player">Player: <span>0</span></p>
+            <span class="sign" id="signPlayer">&#63;</span>
+            <p class="player">Player: <span id="playerscore">0</span></p>
           </div>
           <div class="scoreBox">
-            <img
-              src="img/problem.png"
-              alt="Question mark"
-              class="question_mark"
-            />
-            <p class="computer">Computer: <span>0</span></p>
+            <span class="sign" id="signComp">&#63;</span>
+            <p class="computer">Computer: <span id="computerscore">0</span></p>
           </div>
         </div>
       </div>
@@ -66,7 +64,7 @@
     </main>
     <footer class="footer">
       <p class="copyright">
-        copyright &#xA9; GigDev <span id="currentYear"></span>
+        copyright &#xA9; <span id="currentYear"></span> GigDev
       </p>
     </footer>
   </body>
